@@ -64,7 +64,7 @@
               Yes! Send us a message and we’ll process your request no questions asked.
             </p>
           </li>
-          <li class="list-item">
+          <li class="list-item open">
             <h3 class="question">
               Do you provide additional support?
               <img class="arrow" src="./images/icon-arrow-down.svg" alt="icon-arrow-down">
@@ -87,7 +87,6 @@
     const answers = document.querySelectorAll(".answer")
 
     function toggleAnswer() {
-
       if (this.parentNode.querySelector(".answer").classList.contains('show-answer')) {
         //make sure all the answer is hided
         answers.forEach(answer => answer.classList.remove('show-answer'));
@@ -108,18 +107,7 @@
         this.parentNode.querySelector(".answer").classList.remove('hide-answer')
         this.classList.add('show-question')
       }
-
-
-
-
-
-
-
-
-
     }
-
-
     questions.forEach(question => question.addEventListener('click', toggleAnswer));
   </script>
 </body>
